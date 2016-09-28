@@ -1,12 +1,18 @@
 <!DOCTYPE html>
-<html ng-app="MainApp">
-    <head>
-        <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
-    </head>
-    <body>
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
-        <script type="text/javascript" src="app.js"></script>
-        <!--<script type="text/javascript" src="https://code.highcharts.com"></script>-->
-         <navbar-template></navbar-template>
-    </body>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+</head>
+<body ng-app="app">
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+    <script type="text/javascript" src="app/app.js"></script>
+    <script type="text/javascript" src="app/app-config.js"></script>
+    <script type="text/javascript" src="app/navbar/navbar-directive.js"></script>
+    <script type="text/javascript" src="app/navbar/navbar-controller.js"></script>
+    <!--<script type="text/javascript" src="https://code.highcharts.com"></script>-->
+    <navbar-template></navbar-template>
+
+   <div ng-view></div>
+</body>
 </html>
